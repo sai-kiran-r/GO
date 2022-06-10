@@ -9,6 +9,9 @@ Instructions to run the code
     main.go file has the code that displays "Hello World" 
 
     #time
-    main.go file has the code that displays date and time in different formats
+    main.go file has the code that displays time in different formats
+
+    #date
+    main.go file has the code that displays date in different formats 
 
 

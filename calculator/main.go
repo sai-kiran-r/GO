@@ -1,66 +1,3 @@
-// package main
-
-// import (
-// 	"bufio"
-// 	"fmt"
-// 	"os"
-// )
-
-// func main() {
-// 	// v := 10
-// 	// fmt.Print("This is working ", v)
-
-// 	//lets get the name
-// 	readName := bufio.NewReader(os.Stdin)
-
-// 	fmt.Print("Type your name: ")
-// 	input, _ := readName.ReadString('\n')
-// 	fmt.Println("Hi", input, "enter a value")
-// 	// fmt.Println("Hi %V enter a value:", input)
-
-// }
-// package main
-
-// import "fmt"
-
-// func main() {
-// 	var ary = []int16{12, 7, 4, 67, 82}
-// 	ary = append(ary[2:len(ary)])
-// 	fmt.Println(ary[2])
-// }
-
-// package main
-
-// import "fmt"
-
-// func main() {
-// 	var out int
-// 	for j := 0; j < 20; j++ {
-// 		out = j*j + out
-// 		if out > 12 {
-// 			goto theEnd
-// 		}
-// 	}
-// theEnd:
-// 	fmt.Println(out)
-// }
-// package main
-
-// import "fmt"
-
-// func main() {
-// 	var output string
-// 	j := 12.47
-// 	if j < 12.0 {
-// 		output = "less"
-// 	} else if j > 13 {
-// 		output = "more"
-// 	} else {
-// 		output = "near"
-// 	}
-// 	fmt.Println(output)
-// }
-
 package main
 
 import (
@@ -68,11 +5,44 @@ import (
 )
 
 func main() {
-	// fmt.Print("hi\n")
-	trail()
+	var option int
+	var numberOne int
+	var numberTwo int
+	c := "Welcome to Calculator"
+
+	fmt.Println(c)
+	fmt.Println("Choose one among the following \n 1.Addition \n 2.Subraction \n 3.Multiplication \n 4.Division")
+	fmt.Scan(&option)
+	fmt.Println("Type two numbers")
+	fmt.Scan(&numberOne, &numberTwo)
+
+	if option == 1 {
+		addition()
+	} else if option == 2 {
+		subraction()
+	} else if option == 3 {
+		multiplication()
+	} else if option == 4 {
+		division()
+	} else {
+		fmt.Println("Please choose right option")
+	}
 
 }
 
-func trail() {
-	fmt.Print("This is second function\n")
+func addition() {
+	total := numberOne + numberTwo
+	fmt.Println("Added value is:", total)
+}
+
+func subraction() {
+	println("Subraction")
+}
+
+func multiplication() {
+	println("Multiplication")
+}
+
+func division() {
+	println("Division")
 }
