@@ -11,38 +11,26 @@ func main() {
 	c := "Welcome to Calculator"
 
 	fmt.Println(c)
-	fmt.Println("Choose one among the following \n 1.Addition \n 2.Subraction \n 3.Multiplication \n 4.Division")
-	fmt.Scan(&option)
-	fmt.Println("Type two numbers")
+	
+	fmt.Println("Enter two numbers")
 	fmt.Scan(&numberOne, &numberTwo)
 
+	fmt.Println("Choose one among the following \n 1.Addition \n 2.Subraction \n 3.Multiplication \n 4.Division")
+	fmt.Scan(&option)
+
 	if option == 1 {
-		addition()
+		fmt.Println("Sum of two numbers is: ", numberOne + numberTwo) 
 	} else if option == 2 {
-		subraction()
+		fmt.Println("Difference of two numbers is: ", numberOne - numberTwo)
 	} else if option == 3 {
-		multiplication()
+		fmt.Println("Multiplication of two numbers is: ", numberOne * numberTwo)
 	} else if option == 4 {
-		division()
+		fmt.Println("Division of two numbers is: ", numberOne / numberTwo)
 	} else {
 		fmt.Println("Please choose right option")
 	}
 
 }
 
-func addition() {
-	total := numberOne + numberTwo
-	fmt.Println("Added value is:", total)
-}
 
-func subraction() {
-	println("Subraction")
-}
 
-func multiplication() {
-	println("Multiplication")
-}
-
-func division() {
-	println("Division")
-}
