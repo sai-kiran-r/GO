@@ -12,6 +12,14 @@ Instructions to run the code
     main.go file has the code that displays time in different formats
 
     #date
-    main.go file has the code that displays date in different formats 
+    main.go file has the code that displays date in different formats
+
+    #fizzbuzz game
+    main.go file has the code that displays numbers from 1 to 20
+    but 
+    divisibles of 3 are printed as fizz
+    divisibles of 5 are printed as buzz
+    divisibles of 3 and 5 are printed as fizz buzz
+
 
 
